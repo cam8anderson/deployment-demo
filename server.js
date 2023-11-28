@@ -12,6 +12,7 @@ var rollbar = new Rollbar({
 
 // record a generic message and send it to Rollbar
 rollbar.log("Hello world!");
+rollbar.log("Hello cats");
 
 app.use(express.static(`${__dirname}/public`));
 
