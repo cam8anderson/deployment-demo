@@ -1,8 +1,7 @@
-const Rollbar = require("rollbar");
-
 const btn = document.querySelector("button");
 
-const clickHandler = () => rollbar.log("cat button on");
-alert("The cat name is: Rascal");
+const clickHandler = () => {
+  alert("The cat name is: Rascal"), rollbar.log("cat button on");
+};
 
 btn.addEventListener("click", clickHandler);
