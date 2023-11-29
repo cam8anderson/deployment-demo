@@ -14,6 +14,12 @@ var rollbar = new Rollbar({
 rollbar.log("Hello world!");
 rollbar.log("Hello cats button");
 
+if (buttonClicked) {
+  rollbar.log("this button works");
+} else {
+  rollbar.log("this button is not working");
+}
+
 app.use(express.static(`${__dirname}/public`));
 
 app.listen(4000, () => {
